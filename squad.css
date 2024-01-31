@@ -168,7 +168,6 @@
     bottom: -1.75rem;
     margin: 0 auto;
     overflow: hidden;
-    transform-origin: 18px 17px;
   }
   .card__social h6{
     font-size: 2rem;
@@ -211,27 +210,31 @@
   }
 
   footer{
-    height: 10vh;
+    height: 12vh;
     background-color: var(--black-color);
+    position: relative;
   }
   footer h6{
     text-align: center;
     color: var(--text-color);
     font-family: "Poppins",sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;   
-    font-weight: 100;
+    font-weight: 300;
   }
 .footer-link{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 .footer-icon{
+  position: absolute;
   color: #fff;
+  font-size: 1.5vw;
   transition: 0.3s ease;
+  bottom: 0.5rem;
 }
 .footer-icon:hover{
  color: var(--first-color);
@@ -300,6 +303,15 @@
   .squad-h2{
     text-align: center;
   }
+  .card {
+    width: 380px;
+  }
+  footer h6{
+    font-size: 2.8vw;
+  }
+  .footer-icon{
+    font-size: 2vw;
+  }
 }
 
 /* Below 560px  */
@@ -318,6 +330,16 @@
   .content{
     width: 30rem;
     height: auto;
+  }
+  .card {
+    width: 420px;
+  }
+
+  footer h6{
+    font-size: 5vw;
+  }
+  .footer-icon{
+    font-size: 3vw;
   }
 
 }

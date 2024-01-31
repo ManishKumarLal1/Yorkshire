@@ -9,6 +9,11 @@
   
   html {
     font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+    background-color: #000;
   }
   
 
@@ -27,53 +32,63 @@
     --smaller-font-size: .75rem;
   }
   
-  .container {
-    max-width: 128rem;
-    margin: 0 auto;
-    padding: 8rem 2rem;
-  }
-  .nav-logo{
-    width:  150px;
-    height: 150px;
-  }
-  
-  .navbar-section {
-    width: 100%;
-    background-color: black;
-  }
-  
-  .navbar-section .container {
+  .header {
+    padding: 2rem 4.8rem;
+    height: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    background-color: black;
   }
   
-  .navbar-section .container .navbar ul {
+  .header .logo {
+    width: 7vw;
+  }
+  
+  .navbar-list {
     display: flex;
-    gap: 1.6rem;
-    
-    
-  }
-  
-  
-  a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-    font-size: 2rem;
-  }
-  
-  li{
+    gap: 4.8rem;
     list-style: none;
+    align-items: center;
+    justify-content: center;
   }
-
+  
+  .navbar-link:link,
+  .navbar-link:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: orangered;
+    transition: all 0.3s;
+  }
+  
+  .navbar-link:hover,
+  .navbar-link:active {
+    color: var(--first-color);
+  }
+  
+  .mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-icon {
+    width: 4rem;
+    height: 4rem;
+    color: white;
+  }
+  
+  .mobile-nav-icon[name="close-outline"] {
+    display: none;
+  }
+  
   h1{
     text-align: center;
     color: orangered;
-    font-size: 12rem;
+    font-size: 10vw;
   }
   .Schedule{
     background: #000;
@@ -90,17 +105,16 @@
   
   .sc-container{
      width:100%;
-     position:relative;
      display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 4rem;
+      gap: 2.5rem;
       padding-top: 5rem;
       padding-bottom: 5rem;
         }
   .sc-card {
-    position: relative;
+    
     background-color: var(--black-color);
     padding: 1.25rem 2rem 3rem;
     border-radius: 1.5rem;
@@ -159,5 +173,158 @@
   }
   .sc-img-box h3{
     color: white;
+  }
+
+  footer{
+    height: 12vh;
+    background-color: var(--black-color);
+    position: relative;
+  }
+  footer h6{
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Poppins",sans-serif;
+    font-size: 1.5vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;   
+    font-weight: 300;
+  }
+.footer-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.footer-icon{
+  position: absolute;
+  color: #fff;
+  font-size: 1.5vw;
+  transition: 0.3s ease;
+  bottom: 0.5rem;
+}
+.footer-icon:hover{
+ color: var(--first-color);
+}
+  @media (max-width: 62em) {
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+      border: 3px solid #212529;
+      color: #212529;
+    }
+  
+    .header {
+      position: relative;
+    }
+  
+    .header .logo {
+      width: 9vw;
+    }
+  
+    .navbar {
+      /* display: none; */
+      width: 100%;
+      height: 100vh;
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      /* to get the tranisition  */
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+  
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+  
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    .hero-section{
+      height: calc(100% - 10rem);
+    }
+    .hero-container{
+      flex-direction: column-reverse;
+    }
+    .left{
+      width: 100%;
+      align-items: center;
+    }
+    .right{
+      width: 100%;
+    }
+    .left h2{
+      font-size: 7vw;
+    }
+    .left h3{
+      font-size: 5vw;
+    }
+    .left i{
+      font-size: 5vw;
+    }
+    .hero-link{
+      gap: 4vw;
+    }
+  
+    .header-h1{
+      font-size: 12vw;
+    }
+    .sc-card{
+      max-width: 380px;
+    }
+    footer h6{
+      font-size: 2.8vw;
+    }
+    .footer-icon{
+      font-size: 2vw;
+    }
+  }
+  
+  /* Below 560px  */
+  @media (max-width: 35em) {
+    .header {
+      padding: 0 2.4rem;
+    }
+  
+    .header .logo {
+      width: 20vw;
+    }
+  
+    h1{
+      font-size: 15vw;
+    }
+
+    .sc-card{
+      max-width: 420px;
+    }
+    footer h6{
+      font-size: 5vw;
+    }
+    .footer-icon{
+      font-size: 3vw;
+    }
+  
   }
   

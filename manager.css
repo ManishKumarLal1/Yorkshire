@@ -288,32 +288,35 @@
       }
 
 footer{
-  height: 10vh;
+  position: relative;
+  height: 12vh;
   background-color: var(--black-color);
 }
 footer h6{
   text-align: center;
   color: var(--text-color);
   font-family: "Poppins",sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;   
-  font-weight: 100;
+  font-weight: 300;
 }
 .footer-link{
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 2rem;
+gap: 5rem;
 }
 .footer-icon{
+position: absolute;
 color: #fff;
+font-size: 1.5vw;
 transition: 0.3s ease;
+bottom: 0.5rem;
 }
 .footer-icon:hover{
 color: var(--first-color);
 }
-
 @media (max-width: 62em) {
   .mobile-navbar-btn {
     display: block;
@@ -380,6 +383,12 @@ color: var(--first-color);
   .content{
     height: 30rem;
   }
+  footer h6{
+    font-size: 2.8vw;
+  }
+  .footer-icon{
+    font-size: 2vw;
+  }
 }
 
 /* Below 560px  */
@@ -399,5 +408,25 @@ color: var(--first-color);
     width: 30rem;
     height: auto;
   }
+
+  footer h6{
+    font-size: 5vw;
+  }
+  .footer-icon{
+    font-size: 3vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
