@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+
+  :root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(29, 80%, 58%);
+    --first-color-light: hsl(29, 80%, 70%);
+    --black-color: hsl(29, 16%, 10%);
+    --text-color: hsl(29, 8%, 65%);
+    --body-color: hsl(29, 100%, 99%);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h3-font-size: 1.125rem;
+    --smaller-font-size: .75rem;
+  }
+  
+  .container {
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+  }
+  .nav-logo{
+    width:  150px;
+    height: 150px;
+  }
+  
+  .navbar-section {
+    width: 100%;
+    background-color: black;
+  }
+  
+  .navbar-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .navbar-section .container .navbar ul {
+    display: flex;
+    gap: 1.6rem;
+    
+    
+  }
+  
+  
+  .nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  h1{
+    color:orangered;
+    font-family: 'Poppins',sans-serif;
+    font-size: 10rem;
+    text-align: center;
+    
+  }
+  h2{
+    color:orangered;
+    font-family: 'Poppins',sans-serif;
+    font-size: 5rem;
+    text-align: center;
+  }
+  p{
+   
+    font-family: 'Poppins',sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+  }
+  h3{
+    color: #fff;
+    font-weight: 700rem;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  .manager{
+    height: 100%;
+    background-color: black;
+    padding: 8rem 2rem;
+  }
+
+  .manager-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+  }
+
+  .manager-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:  2rem;
+    flex-wrap: wrap;
+  }
+  .img-box img{
+    width: 30rem;
+    border-radius: 3rem;
+  }
+  .content{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color);
+    max-width: 60rem;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 3rem;
+  }
+  .content p{
+    font-size: 1.5rem;
+  }
+  h6{
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: var(--first-color);
+  }
+  .btn{
+    font-family: "Poopins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: var(--first-color);
+    width: 10rem;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.sup{
+     background-color: black;
+    width: 100%;
+    padding: 8rem 2rem;
+}
+.sup-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4rem;
+   padding: 3rem;
+   flex-wrap: wrap;
+}
+.sup-manager{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sup-img-box{
+    width: 110px;
+    height: 110px;
+    border: 2px solid var(--first-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 0.75rem;
+}
+.sup-img-box img{
+    width: 96px;
+    border-radius: 50%;
+}
+.sup-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sup-content h2{
+    font-size: 4rem;
+    color: var(--first-color);
+}
+.sup-content h3{
+    font-size: 2rem;
+}
+
+.stats{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 8.2rem 2.4rem;
+}
+.stats-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+    }
+    .stat-content{
+      height: 25rem;
+      background-color: var(--black-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2rem;
+      padding-bottom: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      
+    }
+    .stat-h2{
+      font-size: 10rem;
+      color: var(--first-color);
+    }
+    .stat-h3{
+      font-family: "Poppins",sans-serif;
+      font-weight: 500;
+      color: white;
+      line-height: 2rem;
+      font-size: 3rem;
+    }
+
+    .stats-container--2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      padding-top: 3rem;
+        }
+
+        .sup-content{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+
+footer{
+  height: 10vh;
+  background-color: var(--black-color);
+}
+footer h6{
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Poppins",sans-serif;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;   
+  font-weight: 100;
+}
+.footer-link{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+}
+.footer-icon{
+color: #fff;
+transition: 0.3s ease;
+}
+.footer-icon:hover{
+color: var(--first-color);
+}

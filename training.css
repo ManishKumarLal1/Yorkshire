@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+
+  :root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(29, 80%, 58%);
+    --first-color-light: hsl(29, 80%, 70%);
+    --black-color: hsl(29, 16%, 10%);
+    --text-color: hsl(29, 8%, 65%);
+    --body-color: hsl(29, 100%, 99%);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h3-font-size: 1.125rem;
+    --smaller-font-size: .75rem;
+  }
+  
+  .container {
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+  }
+  .nav-logo{
+    width:  150px;
+    height: 150px;
+  }
+  
+  .navbar-section {
+    width: 100%;
+    background-color: black;
+  }
+  
+  .navbar-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .navbar-section .container .navbar ul {
+    display: flex;
+    gap: 1.6rem;
+    
+    
+  }
+  
+  
+  .nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  h1{
+    color:orangered;
+    font-family: 'Poppins',sans-serif;
+    font-size: 10rem;
+    text-align: center;
+    
+  }
+  h2{
+    color:orangered;
+    font-family: 'Poppins',sans-serif;
+    font-size: 5rem;
+    text-align: center;
+  }
+  p{
+   
+    font-family: 'Poppins',sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+  }
+  h3{
+    color: #fff;
+    font-weight: 700rem;
+    font-family: 'Poppins',sans-serif;
+  }
+  .Training{
+    width: 100%;
+    background-color: black;
+    padding: 8.2rem 2.4rem;
+  }
+  .Traning-header{
+    text-align: center;
+  }
+  .Training-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  .training-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    background-color: var(--black-color);
+    padding: 1.25rem 2rem 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 16px hsla(29, 75%, 8%, 0.2);
+  }
+  .training-border{
+      width: 110px;
+      height: 110px;
+      border: 2px solid var(--first-color);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 0.75rem;
+  }
+  .training-img{
+    width: 96px;
+    border-radius: 50%;
+  }
+  .training-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:12rem;
+    height: 3rem;
+    background-color: var(--first-color);
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: 0 8px 24px hsla(29, 75%, 56%, 0.3);
+    left: 0;
+    right: 0;
+    top: 2rem;
+    
+    margin: 0 auto;
+  }
+  .training-h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Poppins",sans-serif;
+  }
+  footer{
+    height: 10vh;
+    background-color: var(--black-color);
+  }
+  footer h6{
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Poppins",sans-serif;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;   
+    font-weight: 100;
+  }
+.footer-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer-icon{
+  color: #fff;
+  transition: 0.3s ease;
+}
+.footer-icon:hover{
+ color: var(--first-color);
+}
