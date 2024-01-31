@@ -222,11 +222,14 @@
     color: antiquewhite;
     text-align: center;
   }
+  .see-btn{
+   width: 20rem;
+  }
   .btn{
     font-family: "Poopins", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
-    background: var(--first-color);
+    background: orangered;
     width: 10rem;
     height: auto;
     padding: 18px;
