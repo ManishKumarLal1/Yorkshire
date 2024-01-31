@@ -171,8 +171,8 @@
     gap: 2rem;
     background-color: var(--black-color);
     border-radius: 2rem;
-    height: 30rem;
     width: 30rem;
+    height: 100%;
     padding-top: 5rem;
     position: relative;
   }
@@ -202,6 +202,14 @@
     font-size: 10vw;
     text-align: center;
     }
+    .manager-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 0.7rem;
+    }
   .manager-h2{
     font-size: 4rem;
     color: var(--first-color);
@@ -214,19 +222,32 @@
     color: antiquewhite;
     text-align: center;
   }
-  .social-link{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 2rem;
-   bottom:  2rem;
-   left: 10rem;
-   position: absolute;
-   
-  }
-  .manager-icon{
-    color: var(--first-color);
-  }
+  .btn{
+    font-family: "Poopins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: var(--first-color);
+    width: 10rem;
+    height: auto;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
   .stats{
     background-color: black;
     width: 100%;
